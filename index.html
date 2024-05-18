@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            box-shadow:4px 4px 4ch;
+            background: url("./50off5.jpg");
+            box-shadow:none;
+        }
+        #id2{
+            margin-left: 80px;
+            /* margin-bottom: 30px; */
+            border:none ;
+            font-size:x-large;
+            font-weight: bolder;
+            font-style: oblique;
+
+        }
+        button{
+            height: 30px;
+            border-radius: 10px;
+            /* width: 110px; */
+            margin-left: 90px;
+            background-color:rgb(162, 162, 153);
+        }
+        input{
+            height: 25px;
+            border-radius: 10px;
+            margin-left: 50px;
+            margin-bottom:10px;
+        }
+        button,input{
+            box-shadow:2px 2px 2ch;
+            border: 0px solid;
+            font-size:medium;
+            font-weight: bold;
+            /* font-style:oblique; */
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <p id="id2">Factorial Value</p>
+        <form action="" id="id3">
+            <input type="text" id="id4">
+        </form>
+        <button>Get factorial</button>
+    </div>
+    <script>
+        div1=document.getElementById("id1");
+        div1.setAttribute("style","border:0px solid;width:300px;padding:30px;border-radius:10px;background-color:lightblue")
+        btn1=document.getElementById("btn")
+        
+        btn1=addEventListener("click",()=>{
+            factnum=document.getElementById("id4").value
+            p1=document.getElementById("id2");
+            fact=1;
+            for(i=1;i<=factnum;i++){
+                fact=fact*i
+            }
+            p1.setAttribute("style","margin-left:140px")
+            p1.innerHTML=fact
+
+           
+
+        })
+    </script>
+    
+</body>
+</html>
